@@ -1,32 +1,99 @@
-.App {
-  text-align: center;
+.Template {
+  padding-bottom: 100px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.Body-Text {
+  font-size: 20px;
+  font-family: "Character";
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.Creator {
+  max-width: 40vw;
+  position: absolute;
+  bottom: 60px;
+  right: 25px;
+  font-family: Times;
+}
+
+.Date {
+  margin-top: 10px;
+}
+
+.Slider {
+  position: relative;
+  background-color: black;
+}
+
+.SliderItem {
+  width: 100vw;
+  max-height: 95vh;
+  top: 0;
+  left: 0;
+  opacity: 0.65;
+}
+
+.Text-Container {
+  z-index: 9999;
+  position: relative;
+  margin-top: -50px;
+  padding: 25px 25px 50px 25px;
+  background-color: white;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.Title {
+  position: absolute;
+  bottom: 50px;
+  padding-bottom: 25px;
+  padding-left: 5vw;
+  font-family: Times;
+  width: 50vw;
+  font-size: 7vw;
+  line-height: 7vw;
+}
+
+.Top {
+  position: relative;
+  top: 0;
+  left: 0;
   color: white;
+  background-color: black;
 }
 
-.App-link {
-  color: #61dafb;
+.Top-Inverse {
+  height: 95vh;
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: white;
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 623px) {
+  .Body-Text {
+    font-size: 16px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .Creator {
+    bottom: 20px;
+  }
+
+  .Text-Container {
+    margin-top: 0px;
+    padding: 20px 0px 50px 0px;
+    background-color: white;
+    box-shadow: none;
+  }
+
+  .Title {
+    bottom: 20px;
+  }
+
+  .Top-Inverse {
+    height: 30vh;
+  }
+
+  .SliderItem {
+    max-height: 50vh;
   }
 }
