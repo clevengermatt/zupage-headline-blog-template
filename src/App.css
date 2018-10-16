@@ -7,6 +7,14 @@
   font-family: "Character";
 }
 
+.Body-Text p:first-child::first-letter {
+  padding: 0 0.3rem;
+  margin: 0.7rem 0.3rem 0 0;
+  font-size: 4rem;
+  float: left;
+  line-height: 0.7;
+}
+
 .Creator {
   max-width: 40vw;
   position: absolute;
