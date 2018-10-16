@@ -81,7 +81,7 @@ class App extends Component {
   };
 
   render() {
-    const { body, images } = this.state;
+    const { body } = this.state;
 
     return (
       <div className="Template">
