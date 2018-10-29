@@ -28,16 +28,23 @@
 }
 
 .Slider {
-  position: relative;
-  background-color: black;
+  min-height: 30vh;
+  height: 50vw;
+  overflow: hidden;
 }
 
-.SliderItem {
-  width: 100vw;
-  max-height: 90vh;
-  top: 0;
-  left: 0;
-  opacity: 0.65;
+.Slider-Item {
+  min-height: 30vh;
+  height: 50vw;
+  width: 100%;
+}
+
+.Slider-Image {
+  min-height: 30vh;
+  height: 50vw;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.75;
 }
 
 .Text-Container {
@@ -69,7 +76,6 @@
 }
 
 .Top-Inverse {
-  height: 95vh;
   position: relative;
   top: 0;
   left: 0;
@@ -95,13 +101,5 @@
 
   .Title {
     bottom: 20px;
-  }
-
-  .Top-Inverse {
-    height: 30vh;
-  }
-
-  .SliderItem {
-    max-height: 50vh;
   }
 }

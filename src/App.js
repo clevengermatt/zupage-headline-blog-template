@@ -29,8 +29,7 @@ class App extends Component {
       colorPalette: postResponse.page.color_palette,
       date: date,
       images: postResponse.images,
-      title: postResponse.title,
-      slideIndex: 0
+      title: postResponse.title
     });
   }
 
@@ -45,12 +44,14 @@ class App extends Component {
 
     var settings = {
       autoplay: true,
+      dots: false,
       fade: true,
       infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1
+      lazyLoad: true,
+      pauseOnHover: false,
+      speed: 500
     };
+
     return (
       <div className={topClass}>
         <Slider className="Slider" {...settings}>
@@ -73,8 +74,8 @@ class App extends Component {
 
     return images.map((image, i) => {
       return (
-        <div key={i} className="SliderItem">
-          <Image src={image.url} />
+        <div key={i} className="Slider-Item">
+          <img key={i} className="Slider-Image" alt="" src={image.url} />
         </div>
       );
     });
